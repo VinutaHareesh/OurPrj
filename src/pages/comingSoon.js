@@ -5,7 +5,7 @@ import road from "../img/road.png";
 import { Card, Container } from "react-bootstrap";
 
 
-export default function comingSoon() {
+function ComingSoon() {
   const redBoxStyle = {
     // Set the background color to red
     backgroundColor: "red",
@@ -19,7 +19,6 @@ export default function comingSoon() {
 
   return (
     <>
-      <Header></Header>
       {/* <Card
         className="text-center"
         border="0"
@@ -41,7 +40,7 @@ export default function comingSoon() {
           backgroundImage: `url(${road})`,
           backgroundRepeat: "no-repeat",
           height: "100vh",
-          width: "9000x",
+          width: "100%",
           
         }}
         className="d-flex align-items-center  
@@ -63,7 +62,8 @@ export default function comingSoon() {
           </Card.Body>
         </Card>
       </Container>
-      <Footer></Footer>
     </>
   );
 }
+
+export default ComingSoon;

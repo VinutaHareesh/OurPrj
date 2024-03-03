@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button';
 
+
 import secBackground from "../img/timage.png";
 import marrImage from "../img/marrImage.png";
 
@@ -17,7 +18,6 @@ import "../App.css";
 export default function froentPage() {
   return (
     <>
-      <Header></Header>
       <FirstComp></FirstComp>
 
       <div>
@@ -60,7 +60,7 @@ export default function froentPage() {
       <Container style={{ backgroundColor: "#cbc6c6"}} fluid className="p-5">
         <Row>
           <Col> 
-          <img src={marrImage} class="rounded" alt="Matrimony image" width="350" height="250"/>
+          <img src={marrImage} class="rounded" alt="Matrimony image" width="90%" />
           
           </Col>
           <Col>
@@ -98,7 +98,6 @@ export default function froentPage() {
         </Row>
       </Container>
 
-      <Footer></Footer>
     </>
   );
 }
